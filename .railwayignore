@@ -1,0 +1,25 @@
+# Railway ignore file for Strapi service
+# This ensures Railway only uses files in this directory
+
+# Ignore root railway.toml to prevent conflicts
+../railway.toml
+../../railway.toml
+
+# Ignore backend files
+../backend/
+../../backend/
+
+# Ignore other services
+../frontend-*/
+../../frontend-*/
+
+# Ignore docs and other non-essential files
+../Docs/
+../../Docs/
+../docs/
+../../docs/
+
+# Ignore git and node_modules
+.git/
+node_modules/
+*.log

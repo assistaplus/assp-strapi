@@ -1,0 +1,22 @@
+# Strapi CMS Railway Configuration - DEFINITIVE FIX
+# This service is isolated from the main backend service
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "/apps/backend-cms/strapi/Dockerfile"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/admin"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[watch]
+paths = ["/apps/backend-cms/strapi/**"]
+
+[environment]
+# Strapi-specific environment
+NODE_ENV = "production"
+PORT = "1337"
+HOST = "0.0.0.0"

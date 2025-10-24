@@ -1,0 +1,51 @@
+# Strapi Docker Ignore
+# Reduce build context and improve build speed
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Development files
+.env.local
+.env.development
+.env.test
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# Test files
+tests/
+__tests__/
+*.test.js
+*.spec.js
+
+# Build artifacts
+dist/
+build/
+.next/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Temporary files
+tmp/
+temp/
